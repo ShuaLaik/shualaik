@@ -27,10 +27,14 @@ $color6: #f3f3ec93;
 @media screen and (min-width: 600px) {
     #header{
         z-index: 500;
+        background-image: url('/app/assets/images/main1.JPG');
         h1{
+            color: rgb(44, 44, 44);
+            font-family: 'Ubuntu', sans-serif;
             transition-duration: 1s;
             font-size: 250%;
-            font-weight: 500;
+            font-weight: 700;
+            width: auto;
             padding: 1% 5% 1% 1.5%;
             transform: skew(5deg);
         }
@@ -62,6 +66,7 @@ $color6: #f3f3ec93;
         h1:hover{
             transition-duration: 1s;
             color: $color4;
+            cursor: pointer;
         }
         a:hover{
             animation-name: shake;
