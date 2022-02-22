@@ -14,11 +14,20 @@
  *= require_self
  */
 
- 
-#body{
-    display: flex;
-    justify-content: center;
+$color1: #28A282;
+$color2: #DEDED8;
+$color3: #B0BAB7;
+$color4: #107586;
+$color5: #148E88;
+$color6: #f3f3ec;
+// #body{
+//     display: flex;
+//     justify-content: center;
+// }
+body{
+    background: $color6;
 }
 // @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import "./reset.scss";
 @import "./header.scss";
+@import "./articles.scss";

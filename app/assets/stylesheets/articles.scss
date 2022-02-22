@@ -1,0 +1,31 @@
+$color1: #28A282;
+$color2: #DEDED8;
+$color3: #B0BAB7; 
+$color4: #107586;
+$color5: #148E88;
+$color6: #f3f3ec;
+
+.main-display{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    img{
+        object-fit: cover;
+        height: 40vh;
+        width: 50vw;
+        margin: 5vh;
+        // box-shadow: 0px 0px 1rem 1rem $color2;
+        // padding-right: 0px;
+    }
+    h1{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        font-weight: 700;
+        top: 100%;
+        left: 0px;
+    }
+    h2{
+        font-weight: 700;
+    }
+}
