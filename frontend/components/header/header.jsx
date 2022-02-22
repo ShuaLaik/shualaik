@@ -15,12 +15,12 @@ export default class Header extends Component {
       <div id="header">
         <h1>ShuaLaik</h1>
           <ul>
-              <Link to="/about">About</Link>
-              <Link to="/music">Music</Link>
-              <Link to="/production">Production</Link>
-              <Link to="/modeling">Modeling</Link>
-              <Link to="/webdev">Web Dev</Link>
-              <Link to="socials">Social Medias</Link>
+              <Link to="/about"><p>About</p></Link>
+              <Link to="/music"><p>Music</p></Link>
+              <Link to="/production"><p>Production</p></Link>
+              <Link to="/modeling"><p>Modeling</p></Link>
+              <Link to="/webdev"><p>Web Dev</p></Link>
+              <Link to="socials"><p>Social Medias</p></Link>
           </ul>
           <Outlet />
       </div>

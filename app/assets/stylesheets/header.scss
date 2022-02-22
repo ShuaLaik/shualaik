@@ -3,7 +3,8 @@ $color2: #DEDED8;
 $color3: #B0BAB7;
 $color4: #107586;
 $color5: #148E88;
-$color6: #f3f3ec;
+$color6: #f3f3ec93;
+
 
 // @media screen and (min-width: 400px) {
 //     #header{
@@ -25,30 +26,55 @@ $color6: #f3f3ec;
 // }
 @media screen and (min-width: 600px) {
     #header{
+        z-index: 500;
         h1{
             font-size: 250%;
-            padding: 1% 5% 1.5% 1.5%
+            font-weight: 500;
+            padding: 1% 5% 1% 1.5%;
+            transform: skew(5deg);
+        }
+        
+        ul{
+            padding: 0px;
+            // display: inline-block;
+            transform: skew(15deg);
+            position: relative;
+            right: .9%;
+            background-color: rgb(44, 44, 44);
+            width: 67.6%;
+            animation-name: slidein;
+            animation-duration: .1s;
+        }
+        a{
+            transition-duration: .05s;
+            display: inline-block;
+            padding: 1% 4% 1% 4%;
+            color: white;
+            font-weight: 300;
+            text-decoration: none;
+            p{
+                transition-duration: .05s;
+                transform: skew(-15deg);
+            }
+        }
+        a:hover{
+            transition-duration: .5s;
+            background-color: $color1;
+            p{
+                transition-delay: .1s;
+                transition-duration: .3s;
+                font-weight: 600;
+                color: rgb(44, 44, 44);
+            }
         }
     }
-    ul{
-        padding: 0px;
-        display: inline-block;
-        transform: skew(15deg);
-        position: relative;
+}
+@keyframes slidein {
+    0% {
+        right: -1000px
+    }
+    100%{
         right: .9%;
-        background-color: rgb(44, 44, 44);
-        width: 50%, auto;
-    }
-    a{
-        display: inline-block;
-        padding: .5% 2% .5% 2%;
-        color: white;
-        text-decoration: none;
-        // transform: skew(-15deg);
-    }
-    a:hover{
-        background-color: white;
-        color: rgb(44, 44, 44);
     }
 }
 
