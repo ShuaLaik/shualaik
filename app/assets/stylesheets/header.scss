@@ -25,15 +25,38 @@ $color6: #f3f3ec93;
 //     }
 // }
 @media screen and (min-width: 600px) {
-    img{
-        z-index: -5;
+    // #main-side{
+    //     z-index: -5;
+    //     position: absolute;
+    //     top: -5%;
+    //     right: -10%;
+ 
+    //     transform: rotate(-15deg);
+    //     padding: 10px;
+    //     background-color: $color4;
+    //     #img1{
+    //         object-fit:cover;
+    //                height: 50%;
+    //     width: 43%;
+        
+    //     }
+    //     #img2{
+    //         object-fit:cover;
+    //                height: 50%;
+    //     width: 43%;
+    //     padding-top: 10%
+        
+    //     }
+    // }
+    #img1{
         position: absolute;
         top: 0px;
-        right: 0px;
-        height: 50%;
-        width: 50%;
-        object-fit: scale-down;
-        transform: rotate(-15deg);
+        z-index: -5;
+        object-fit: cover;
+        object-position: 100% 25%;
+        width: 165vw;
+        height: 12.5vh;
+        border: 1px solid rgb(44, 44, 44);
     }
     #header{
 
@@ -58,6 +81,7 @@ $color6: #f3f3ec93;
             background-color: rgb(44, 44, 44);
             width: 67.6%;
             animation-name: slidein;
+            animation-timing-function: ease-in-out;
             animation-duration: .3s;
         }
         a{
@@ -76,7 +100,6 @@ $color6: #f3f3ec93;
         h1:hover{
             transition-duration: 1s;
             color: $color4;
-            cursor: pointer;
         }
         a:hover{
             animation-name: shake;

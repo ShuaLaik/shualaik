@@ -1,0 +1,24 @@
+$color1: #28A282;
+$color2: #DEDED8;
+$color3: #B0BAB7;
+$color4: #107586;
+$color5: #148E88;
+$color6: #f3f3ec93;
+$color7: #992323;
+
+#empty{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 87.5vh;
+    h1{
+        padding: 20px;
+        font-size: 50px;
+        color: $color7;
+    }
+    h2{
+        font-size: 20px;
+        color: $color4
+    }
+}

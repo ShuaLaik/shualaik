@@ -14,7 +14,7 @@ export default class Header extends Component {
     return (
       <div>
         <div id="header">
-          <h1>ShuaLaik</h1>
+          <h1>shualaik</h1>
           <ul>
               <Link to="/about"><p>About</p></Link>
               <Link to="/music"><p>Music</p></Link>
@@ -24,7 +24,10 @@ export default class Header extends Component {
               <Link to="socials"><p>Social Medias</p></Link>
           </ul>
         </div>
-            <img src={window.main1URL}/>
+            <ul id="main-side">
+              <img id="img1" src={window.main1URL}/>
+              {/* <img id="img2" src={window.main2URL}/> */}
+            </ul>
             <Outlet />
       </div>
     )
