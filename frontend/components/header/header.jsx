@@ -14,7 +14,7 @@ export default class Header extends Component {
     return (
       <div>
         <div id="header">
-          <h1>shualaik</h1>
+          <h1>SHUALAIK</h1>
           <ul>
               <Link to="/about"><p>About</p></Link>
               <Link to="/music"><p>Music</p></Link>
