@@ -13,8 +13,8 @@ export default class Header extends Component {
   render() {
     return (
       <div>
-      <div id="header">
-        <h1>ShuaLaik</h1>
+        <div id="header">
+          <h1>ShuaLaik</h1>
           <ul>
               <Link to="/about"><p>About</p></Link>
               <Link to="/music"><p>Music</p></Link>
@@ -23,8 +23,9 @@ export default class Header extends Component {
               <Link to="/webdev"><p>Web Dev</p></Link>
               <Link to="socials"><p>Social Medias</p></Link>
           </ul>
-      </div>
-          <Outlet />
+        </div>
+            <img src={window.main1URL}/>
+            <Outlet />
       </div>
     )
   }
