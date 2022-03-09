@@ -55,11 +55,17 @@ $color6: #f3f3ec93;
         object-fit: cover;
         object-position: 100% 25%;
         width: 165vw;
-        height: 12.5vh;
+        height: 105px;
         border: 1px solid rgb(44, 44, 44);
     }
     #header{
-        background-image: image-url("main1.JPG");
+        box-shadow: 1em 1em 1em $color6 4px 4px 4px $color6;
+        background-color: $color6;
+        z-index: 600;
+        // background-image: image-url("main1.JPG");
+        // background-size: 100%;
+        // background-position: 60% 30%;
+
         z-index: 500;
         h1{
             color: rgb(44, 44, 44);
@@ -74,7 +80,7 @@ $color6: #f3f3ec93;
         }
         ul{
             padding: 0px;
-            min-width: 900px;
+            min-width: 1000px;
             // display: inline-block;
             transform: skew(15deg);
             position: relative;
@@ -100,6 +106,9 @@ $color6: #f3f3ec93;
                 transform: skew(-15deg);
             }
         }
+        .selected{
+            color: rgb(166, 114, 214);
+        }
         h1:hover{
             transition-duration: 1s;
             color: $color4;
@@ -108,7 +117,7 @@ $color6: #f3f3ec93;
             animation-name: shake;
             animation-duration: .5s;
             transition-duration: .5s;
-            background-color: $color1;
+            background-color: $color4;
             p{
                 transition-delay: .1s;
                 transition-duration: .3s;
