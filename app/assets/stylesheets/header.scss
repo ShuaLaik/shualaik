@@ -59,9 +59,8 @@ $color6: #f3f3ec93;
         border: 1px solid rgb(44, 44, 44);
     }
     #header{
-
+        background-image: image-url("main1.JPG");
         z-index: 500;
-        background-image: url('/app/assets/images/main1.JPG');
         h1{
             color: rgb(44, 44, 44);
             font-family: 'Ubuntu', sans-serif;
@@ -75,17 +74,20 @@ $color6: #f3f3ec93;
         }
         ul{
             padding: 0px;
+            min-width: 900px;
             // display: inline-block;
             transform: skew(15deg);
             position: relative;
             right: .9%;
-            background-color: rgb(44, 44, 44);
+            
             width: 67.6%;
             animation-name: slidein;
             animation-timing-function: ease-in-out;
             animation-duration: .3s;
         }
         a{
+            background-color: rgb(44, 44, 44);
+            border: 1px solid rgb(44, 44, 44);
             transition-duration: .05s;
             display: inline-block;
             padding: 1% 4% 1% 4%;
