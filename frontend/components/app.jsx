@@ -5,6 +5,7 @@ import HeaderContainer from "./header/header_container";
 import AboutContainer from "./about/about_container";
 import WebdevContainer from "./webdev/webdev_container";
 import Empty from "./empty/empty";
+import Main from "./webdev/main/main";
 // import { AuthRoute, ProtectedRoute } from "../util/route_util";
 
 
@@ -16,7 +17,9 @@ const App = ( { store } ) => {
                 <Route path="/music" element={<Empty />} />
                 <Route path="/production" element={<Empty />} />
                 <Route path="/modeling" element={<Empty />} />
-                <Route path="/webdev" element={<WebdevContainer />} />
+                <Route path="/webdev" element={<WebdevContainer />} >
+                    <Route path="" element={<Main />}/>
+                </Route>
                 <Route path="/socials" element={<Empty />} />
             </Route>
         </Routes>

@@ -6,11 +6,15 @@ $color5: #148E88;
 $color6: #f3f3ec93;
 
 #webdev{
-        height: 87.5vh;
+        height: 86.5vh;
+        display: flex;
+        flex-direction: row;
     #left-bar-webdev:last-child{
         margin-bottom: 80px;
     }
     #left-bar-webdev{
+        z-index: 1;
+        box-shadow: 1px 1px 1px $color1, 1px 1px 1em $color1;
         // padding-bottom: 40px;
         display: flex;
         justify-content: center;
@@ -18,9 +22,9 @@ $color6: #f3f3ec93;
         flex-direction: column;
         width: 30%;
         background-color: $color1;
-        border-right: 4px solid rgb(44, 44, 44);
         height: 100%;
-        overflow: scroll;
+        overflow-y: scroll;
+        margin: 0 auto;
         h1{
             font-weight: 700;
             margin: 2px;
@@ -38,7 +42,7 @@ $color6: #f3f3ec93;
             text-align: center;
         }
         img{
-            margin: 40% 40px 15px 40px;
+            margin: 300px 40px 15px 40px;
             width: 200px;
             height: 250px;
             object-fit:cover;
@@ -46,4 +50,65 @@ $color6: #f3f3ec93;
             border-radius: 8px;
         }
     }
+    #right-bar-webdev{
+        z-index: 0;
+        height: 100%;
+         width: 70%;
+         display: flex;
+         flex-direction: column;
+        .main-selector{
+            position: relative;
+            height: 43vh;
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                overflow: hidden;
+
+            }
+            h1{
+                display: none;
+                position: absolute;
+                font-weight: 700;
+                text-align: center;
+                width: 15%;
+                font-size: 500%;
+                height: 5%;
+                right: 50%;
+                top: 50%;
+                text-decoration: none;
+                color: rgb(44, 44, 44);
+            }
+            h1:hover{
+                display: block;
+            }
+            .cover:hover + h1 {
+                display: block;
+            }
+        }
+        
+    }
+}
+.cover{
+    transition-duration: .5s;
+    background-color: #f3f3ec38;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.cover:hover{
+    transition-duration: .5s;
+    // animation: fadeOut;
+    // animation-duration: 2s;
+
+   background-color: #f3f3ec8e;
+
+
+}
+@keyframes fadeOut {
+    0% {background-color: #f3f3ec;}
+    100% {background-color: #f3f3ec00;
+} 
 }
